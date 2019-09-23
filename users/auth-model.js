@@ -16,7 +16,7 @@ function checkDatabase() {
 }
 
 async function add(users) {
-  const [id] = await db("users").insert(users);
+  const [id] = await db("users").insert(users, "id");
 }
 
 function find() {

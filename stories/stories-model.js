@@ -12,7 +12,7 @@ module.exports = {
 
 // stories
 function submit(story) {
-  return db("stories").insert(story);
+  return db("stories").insert(story, "id");
 }
 
 function find() {
