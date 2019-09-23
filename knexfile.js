@@ -14,7 +14,7 @@ module.exports = {
     seeds: {
       directory: "./database/seed"
     }
-  }
+  },
 
   // staging: {
   //   client: 'postgresql',
@@ -33,18 +33,33 @@ module.exports = {
   // },
 
   // production: {
-  //   client: 'postgresql',
+  //   client: "postgresql",
+  //   client: "sqlite3",
   //   connection: {
-  //     database: 'my_db',
-  //     user:     'username',
-  //     password: 'password'
+  //     database: "my_db",
+  //     user: "username",
+  //     password: "password"
   //   },
   //   pool: {
   //     min: 2,
   //     max: 10
   //   },
   //   migrations: {
-  //     tableName: 'knex_migrations'
+  //     tableName: "knex_migrations"
   //   }
   // }
+  production: {
+    client: "sqlite3",
+    connection: {
+      filename: "./dev.sqlite3"
+    },
+    useNullAsDefault: true,
+    migrations: {
+      directory: "./database/migrations",
+      tableName: "dbmigrations"
+    },
+    seeds: {
+      directory: "./database/seed"
+    }
+  }
 };

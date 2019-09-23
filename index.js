@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const server = require("./server");
 
 const port = 3000;
