@@ -30,7 +30,7 @@
 
     This is how the data structure looks currently. When there are changes I will notify you and update it here.
 
-    ```javascript
+    ```
 
     // USERS TABLE
 
@@ -45,7 +45,7 @@
     }
     ```
 
-    ```javascript
+    ```
 
     // StSTORY TABLE
 
@@ -79,14 +79,14 @@
 
     1. Required Fields
 
-    ```javascript
+    ```
         username: string
         password: string
     ```
 
     2. Optional
 
-    ```javascript
+    ```
         first_name: string;
         last_name: string;
         role: string;
@@ -94,7 +94,7 @@
 
     3. Headers
 
-    ```javascript
+    ```
         Content-type     application/json
     ```
 
@@ -106,7 +106,7 @@
 
       1. Required Fields
 
-    ```javascript
+    ```
         username: string
         password: string
     ```
@@ -137,7 +137,7 @@
 
      1. Required Fields
 
-    ```javascript
+    ```
         author: string
         title: string
         body: string
@@ -146,7 +146,7 @@
 
     2. Optional
 
-    ```javascript
+    ```
     url_img: string;
     approved: boolean;
     ```
@@ -159,7 +159,7 @@
 
     datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -178,7 +178,7 @@
 
     datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -199,7 +199,7 @@
 
     datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -218,7 +218,7 @@
 
     datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
