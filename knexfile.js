@@ -19,5 +19,24 @@ module.exports = {
         conn.run("PRAGMA foreign_keys = ON", done);
       }
     }
+  },
+  production: {
+    client: "sqlite3",
+    connection: {
+      filename: "./dev.sqlite3"
+    },
+    useNullAsDefault: true,
+    migrations: {
+      directory: "./database/migrations",
+      tableName: "dbmigrations"
+    },
+    seeds: {
+      directory: "./database/seed"
+    },
+    pool: {
+      afterCreate: (conn, done) => {
+        conn.run("PRAGMA foreign_keys = ON", done);
+      }
+    }
   }
 };
