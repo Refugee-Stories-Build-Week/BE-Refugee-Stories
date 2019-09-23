@@ -26,12 +26,9 @@
 
 ### DATA STRUCTURES
 
-    The data is now persistant. If you want me to wipe the db for any reason, let me know!
-
-    This is how the data structure looks currently. When there are changes I will notify you and update it here.
+####The data is now persistant. If you want me to wipe the db for any reason, let me know! This is how the data structure looks currently. When there are changes I will notify you and update it here.
 
     ```
-
     // USERS TABLE
 
     {
@@ -46,8 +43,7 @@
     ```
 
     ```
-
-    // StSTORY TABLE
+    // STORY TABLE
 
     {
         author: string
@@ -60,7 +56,7 @@
     }
     ```
 
-### USERS ALREADY SEEDED
+# USERS ALREADY SEEDED
 
     ```
     username: user,
@@ -71,11 +67,11 @@
 
 # ROUTES FOR USER
 
-### POST /users/register
+## POST /users/register
 
     https://refugee--stories.herokuapp.com/users/register
 
-    - make a register request
+#### make a register request
 
     1. Required Fields
 
@@ -98,7 +94,7 @@
         Content-type     application/json
     ```
 
-### POST /users/login
+## POST /users/login
 
     https://refugee--stories.herokuapp.com/users/login
 
@@ -111,19 +107,19 @@
         password: string
     ```
 
-### GET /users/
+## GET /users/
 
     https://refugee--stories.herokuapp.com/users/
 
-### PUT /updateUser/:id
+## PUT /updateUser/:id
 
     https://refugee--stories.herokuapp.com/users/updateUser/:id
 
 
-    Requirement:
-    - id is the path variable
-    - validation header with a validation token
-    - A json object with the desired data to update
+#### Requirement:
+- id is the path variable
+- validation header with a validation token
+- A json object with the desired data to update
 
 ### DELETE /deleteUser/:id
 
