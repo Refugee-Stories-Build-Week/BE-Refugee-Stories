@@ -26,7 +26,7 @@ Any requests other than login,register, GET /users and GET /stories, require a h
 
 ### DATA STRUCTURES
 
-####The data is now persistant. If you want me to wipe the db for any reason, let me know! This is how the data structure looks currently. When there are changes I will notify you and update it here.
+The data is now persistant. If you want me to wipe the db for any reason, let me know! This is how the data structure looks currently. When there are changes I will notify you and update it here.
 
     ```
     // USERS TABLE
