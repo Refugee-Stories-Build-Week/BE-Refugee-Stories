@@ -73,14 +73,14 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
 #### make a register request
 
-    1. Required Fields
+1. Required Fields
 
     ```
         username: string
         password: string
     ```
 
-    2. Optional
+2. Optional
 
     ```
         first_name: string;
@@ -131,7 +131,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/stories/submit
 
-     1. Required Fields
+ 1. Required Fields
 
     ```
         author: string
@@ -140,7 +140,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
         country: string
     ```
 
-    2. Optional
+2. Optional
 
     ```
     url_img: string;
@@ -172,7 +172,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     link: https://refugee--stories.herokuapp.com/stories/all/:id
 
-    datas you will be receiving:
+datas you will be receiving:
 
     ```
         id: number
@@ -193,7 +193,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/stories/
 
-    datas you will be receiving:
+datas you will be receiving:
 
     ```
         id: number
@@ -212,7 +212,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/stories/:id
 
-    datas you will be receiving:
+datas you will be receiving:
 
     ```
         id: number
@@ -232,10 +232,10 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
     https://refugee--stories.herokuapp.com/stories/:id
 
 
-    Requirement:
-    - id is the path variable
-    - validation header with a validation token
-    - A json object with the desired data to update
+Requirement:
+- id is the path variable
+- validation header with a validation token
+- A json object with the desired data to update
 
 ### DELETE /stories/:id
 
