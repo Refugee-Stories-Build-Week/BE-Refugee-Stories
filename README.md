@@ -88,7 +88,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
         role: string;
     ```
 
-    3. Headers
+3. Headers
 
     ```
         Content-type     application/json
@@ -98,9 +98,9 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/users/login
 
-    - make login request
+- make login request
 
-      1. Required Fields
+  1. Required Fields
 
     ```
         username: string
@@ -131,7 +131,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/stories/submit
 
- 1. Required Fields
+1. Required Fields
 
     ```
         author: string
@@ -153,7 +153,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 
     https://refugee--stories.herokuapp.com/stories/all
 
-    datas you will be receiving:
+datas you will be receiving:
 
     ```
         id: number
