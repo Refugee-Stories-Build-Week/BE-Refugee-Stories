@@ -8,7 +8,7 @@
 
 ### Authentication
 
-#### Any requests other than login,register, GET /users and GET /stories, require a header with a VALID TOKEN.
+Any requests other than login,register, GET /users and GET /stories, require a header with a VALID TOKEN.
 
     Axios.post(
       'https://refugee--stories.herokuapp.com/users/', data,
