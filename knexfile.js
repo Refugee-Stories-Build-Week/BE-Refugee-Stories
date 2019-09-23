@@ -1,4 +1,13 @@
 // Update with your config settings.
+const localPg = {
+  host: "localhost",
+  database: "db",
+  user: "user",
+  password: "1234asdf"
+};
+
+// tell production environment to look at environment variables for DB url
+const productionDbConnection = process.env.DATABASE_URL || localPg;
 
 module.exports = {
   development: {
@@ -21,14 +30,11 @@ module.exports = {
     }
   },
   production: {
-    client: "sqlite3",
-    connection: {
-      filename: "./dev.sqlite3"
-    },
+    client: "pg",
+    connection: productionDbConnection,
     useNullAsDefault: true,
     migrations: {
-      directory: "./database/migrations",
-      tableName: "dbmigrations"
+      directory: "./database/migrations"
     },
     seeds: {
       directory: "./database/seed"
