@@ -168,7 +168,7 @@ datas you will be receiving:
         updated_at: timestamp
     ```
 
-#### GET /stories/:id
+#### GET /stories/all/:id
 
     link: https://refugee--stories.herokuapp.com/stories/all/:id
 
@@ -187,7 +187,7 @@ datas you will be receiving:
         updated_at: timestamp
     ```
 
-### GET A STORY
+### GET THE APPROVED STORIES
 
 #### GET /stories (All Approved Stories)
 
@@ -208,7 +208,7 @@ datas you will be receiving:
         updated_at: timestamp
     ```
 
-#### GET /stories/:id
+#### GET /stories/:id (Get an approved story)
 
     https://refugee--stories.herokuapp.com/stories/:id
 
