@@ -189,7 +189,7 @@ datas you will be receiving:
 
 ### GET A STORY
 
-#### GET /stories
+#### GET /stories (All Approved Stories)
 
     https://refugee--stories.herokuapp.com/stories/
 
