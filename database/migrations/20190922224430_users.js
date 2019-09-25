@@ -25,7 +25,7 @@ exports.up = function(knex) {
       stories.string("author", 1000).notNullable();
       stories.string("title", 1000).notNullable();
       stories.boolean("approved");
-      stories.string("body", 1000).notNullable();
+      stories.text("body", 1000).notNullable();
       stories.text("country", 1000).notNullable();
       stories.text("url_img", 1000);
 
