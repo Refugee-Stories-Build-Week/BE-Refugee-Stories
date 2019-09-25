@@ -22,12 +22,12 @@ exports.up = function(knex) {
       // primary key (id)
       stories.increments();
 
-      stories.string("author", 1000).notNullable();
-      stories.string("title", 1000).notNullable();
+      stories.text("author", 255).notNullable();
+      stories.text("title", 255).notNullable();
       stories.boolean("approved");
       stories.text("body", 1000).notNullable();
-      stories.text("country", 1000).notNullable();
-      stories.text("url_img", 1000);
+      stories.text("country", 255).notNullable();
+      stories.text("url_img", 255);
 
       //foreign key (id)
       stories
