@@ -42,7 +42,7 @@ exports.seed = function(knex) {
           id: 4,
           author: "medium",
           title: "Sabri from Syria!",
-          approved: 0,
+          approved: 1,
           body:
             "He fled his home in Aleppo, Syria and is currently living in Paiania, Greece. Sabri shared his story with us through Emfasis, a Greek organization responding to the needs of Syrian refugees in Greece and implementing a photography project to help Syrian children address psychological problems. Sabri is 16 years old. “I am currently staying at a guesthouse for minors and families in Paiania, just outside Athens, Greece with my family. I’d like to go to Germany. We already know my family and I were granted permission to relocate to a German city. We are hoping to start a new page in our lives. I wish I could make people love each other — that is my dream.”",
           country: "Syria",
@@ -53,7 +53,7 @@ exports.seed = function(knex) {
           id: 5,
           author: "medium",
           title: "Achan from Sudan!",
-          approved: 0,
+          approved: 1,
           body:
             "She fled her home in Pajok, South Sudan and is currently living in a refugee camp in Lamwo District, Uganda. Achan’s story was shared with us by Hope Ofiriha, a Norwegian NGO which assists South Sudanese refugees with medical care, microfinance, and education. She is 75 years old. Achan is a widow who had eight children. Seven of her children died during the ongoing war in her home country of South Sudan. As a result, she was left with many orphans to take care of. Before the war, she was a peasant farmer in Sudan who cultivated to sustain her big family. When the war broke out in her community, she and her family ran to save their lives, leaving all their belongings behind. She believes her home has been destroyed by the rebels.",
           country: "Syria",
