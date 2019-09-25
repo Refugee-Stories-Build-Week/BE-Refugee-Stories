@@ -8,7 +8,7 @@
 
 ### Authentication
 
-#### Any requests other than login,register, GET /users and GET /stories, require a header with a VALID TOKEN.
+Any requests other than login,register, GET /users and GET /stories, require a header with a VALID TOKEN.
 
     Axios.post(
       'https://refugee--stories.herokuapp.com/users/', data,
@@ -26,12 +26,9 @@
 
 ### DATA STRUCTURES
 
-    The data is now persistant. If you want me to wipe the db for any reason, let me know!
+The data is now persistant. If you want me to wipe the db for any reason, let me know! This is how the data structure looks currently. When there are changes I will notify you and update it here.
 
-    This is how the data structure looks currently. When there are changes I will notify you and update it here.
-
-    ```javascript
-
+    ```
     // USERS TABLE
 
     {
@@ -45,9 +42,8 @@
     }
     ```
 
-    ```javascript
-
-    // StSTORY TABLE
+    ```
+    // STORY TABLE
 
     {
         author: string
@@ -60,7 +56,7 @@
     }
     ```
 
-### USERS ALREADY SEEDED
+# USERS ALREADY SEEDED
 
     ```
     username: user,
@@ -71,59 +67,59 @@
 
 # ROUTES FOR USER
 
-### POST /users/register
+## POST /users/register
 
     https://refugee--stories.herokuapp.com/users/register
 
-    - make a register request
+#### make a register request
 
-    1. Required Fields
+1. Required Fields
 
-    ```javascript
+    ```
         username: string
         password: string
     ```
 
-    2. Optional
+2. Optional
 
-    ```javascript
+    ```
         first_name: string;
         last_name: string;
         role: string;
     ```
 
-    3. Headers
+3. Headers
 
-    ```javascript
+    ```
         Content-type     application/json
     ```
 
-### POST /users/login
+## POST /users/login
 
     https://refugee--stories.herokuapp.com/users/login
 
-    - make login request
+- make login request
 
-      1. Required Fields
+  1. Required Fields
 
-    ```javascript
+    ```
         username: string
         password: string
     ```
 
-### GET /users/
+## GET /users/
 
     https://refugee--stories.herokuapp.com/users/
 
-### PUT /updateUser/:id
+## PUT /updateUser/:id
 
     https://refugee--stories.herokuapp.com/users/updateUser/:id
 
 
-    Requirement:
-    - id is the path variable
-    - validation header with a validation token
-    - A json object with the desired data to update
+#### Requirement:
+- id is the path variable
+- validation header with a validation token
+- A json object with the desired data to update
 
 ### DELETE /deleteUser/:id
 
@@ -135,18 +131,18 @@
 
     https://refugee--stories.herokuapp.com/stories/submit
 
-     1. Required Fields
+1. Required Fields
 
-    ```javascript
+    ```
         author: string
         title: string
         body: string
         country: string
     ```
 
-    2. Optional
+2. Optional
 
-    ```javascript
+    ```
     url_img: string;
     approved: boolean;
     ```
@@ -157,9 +153,9 @@
 
     https://refugee--stories.herokuapp.com/stories/all
 
-    datas you will be receiving:
+datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -172,13 +168,13 @@
         updated_at: timestamp
     ```
 
-#### GET /stories/:id
+#### GET /stories/all/:id
 
     link: https://refugee--stories.herokuapp.com/stories/all/:id
 
-    datas you will be receiving:
+datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -191,15 +187,15 @@
         updated_at: timestamp
     ```
 
-### GET A STORY
+### GET THE APPROVED STORIES
 
-#### GET /stories
+#### GET /stories (All Approved Stories)
 
     https://refugee--stories.herokuapp.com/stories/
 
-    datas you will be receiving:
+datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -212,13 +208,13 @@
         updated_at: timestamp
     ```
 
-#### GET /stories/:id
+#### GET /stories/:id (Get an approved story)
 
     https://refugee--stories.herokuapp.com/stories/:id
 
-    datas you will be receiving:
+datas you will be receiving:
 
-    ```javascript
+    ```
         id: number
         author: string
         title: string
@@ -236,10 +232,10 @@
     https://refugee--stories.herokuapp.com/stories/:id
 
 
-    Requirement:
-    - id is the path variable
-    - validation header with a validation token
-    - A json object with the desired data to update
+Requirement:
+- id is the path variable
+- validation header with a validation token
+- A json object with the desired data to update
 
 ### DELETE /stories/:id
 
