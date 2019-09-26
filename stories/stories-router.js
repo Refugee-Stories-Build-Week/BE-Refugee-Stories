@@ -5,7 +5,7 @@ const restricted = require("../authenticate/auth");
 //**** ALL RESTRICTED ROUTES */
 
 // Submit a story
-router.post("/submit", (req, res) => {
+router.post("/submit", restricted, (req, res) => {
   let story = req.body;
   story.approved = 0;
 
