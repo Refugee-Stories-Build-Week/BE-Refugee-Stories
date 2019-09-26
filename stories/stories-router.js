@@ -36,7 +36,7 @@ router.get("/all/:id", restricted, (req, res) => {
 });
 
 // get only approved stories
-router.get("/", restricted, (req, res) => {
+router.get("/", (req, res) => {
   Stories.getApprovedStories()
     .then(story => {
       res.status(200).json(story);
@@ -45,7 +45,7 @@ router.get("/", restricted, (req, res) => {
 });
 
 // get only approved specific story
-router.get("/:id", restricted, (req, res) => {
+router.get("/:id", (req, res) => {
   const { id } = req.params;
   Stories.getApprovedStory(id)
     .then(story => {
