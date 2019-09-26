@@ -59,7 +59,7 @@ The data is now persistant. If you want me to wipe the db for any reason, let me
 # USERS ALREADY SEEDED
 
     ```
-    username: user,
+    username: someguy,
     password: 1234asdf
     ```
 
