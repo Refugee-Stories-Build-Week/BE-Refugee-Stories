@@ -6,6 +6,8 @@ module.exports = {
   findBy,
   getApprovedStories,
   getApprovedStory,
+  notApprovedStories,
+  notApprovedStory,
   updateStory,
   deleteStory
 };
@@ -34,6 +36,18 @@ function getApprovedStories() {
 function getApprovedStory(id) {
   return db("stories")
     .where({ id: id, approved: 1 })
+    .first();
+}
+
+function notApprovedStories() {
+  return db("stories")
+    .select("*")
+    .where({ approved: 0 });
+}
+
+function notApprovedStory(id) {
+  return db("stories")
+    .where({ id: id, approved: 0 })
     .first();
 }
 
